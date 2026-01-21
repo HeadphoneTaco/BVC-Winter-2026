@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/Goblin/Blueprints/BP_Collectible.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/Goblin/Materials/M_Gold.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/30/E1T9CJYCVBP751LIUC3I4W.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/Input/Actions/IA_FlashToggle.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/Input/IMC_Default.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Goblin/Content/Goblin/Levels/Lvl_Pacman.umap"
+			]
+		}
+	]
+}
