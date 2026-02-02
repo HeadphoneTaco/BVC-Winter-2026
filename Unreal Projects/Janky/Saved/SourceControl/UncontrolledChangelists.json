@@ -1,0 +1,46 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/micha/Desktop/Janky/Content/Janky/Assets/Materials/M_Coin.uasset",
+				"C:/Users/micha/Desktop/Janky/Content/Janky/Blueprints/BP_Coin.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/Janky/Blueprints/BP_Coin.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/Janky/Assets/Materials/M_CoinMaterial.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/NM/KGOQBF29XJV2II4FI2UDD5.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/BG/SQCSGY3O161UX1KDVLC2MJ.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/Janky/Assets/Materials/M_Coin.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/Janky/Assets/Materials/M_Test.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/IM/OJFRA5ZV9XRHU868SQXYM4.uasset",
+				"C:/Users/micha/Documents/GitHub/BVC-Winter-2026/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/YJ/NAKBWZHRDX5K7S6MPSBX3L.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_02.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_04.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_05.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_06.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/4U/QNTPFEW0NVV58KN07QPL27.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/1H/UB2WR5RRWBY3FDTW5SC0GM.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/KX/7FADWQOPWMW7XP7M41US7R.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/ThirdPerson/Maps/_GENERATED/micha/Box_06CC2322.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_01_Subscenes/BP_ThirdPersonCharacter0_Scene_1_01.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_02_Subscenes/BP_ThirdPersonCharacter0_Scene_1_02.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_03_Subscenes/BP_ThirdPersonCharacter0_Scene_1_03.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_04_Subscenes/BP_ThirdPersonCharacter0_Scene_1_04.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_05_Subscenes/BP_ThirdPersonCharacter0_Scene_1_05.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_06_Subscenes/BP_ThirdPersonCharacter0_Scene_1_06.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_07_Subscenes/BP_ThirdPersonCharacter0_Scene_1_07.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_01.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_03.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/Cinematics/Takes/2026-01-16/Scene_1_07.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/NC/13AX1PR0MSR05RN3I806EL.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/SX/XHGQPAOHHGLWUPLGTN9UHV.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/6N/A7I7SBWT3GH57UVOTLO0X2.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/O1/NNM3SSBVF5M659Y8LXXR34.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/28/MGH4A2L1SDDPKN7QOJX5TH.uasset",
+				"C:/Users/micha/Documents/Unreal Projects/Janky/Content/ThirdPerson/Maps/_GENERATED/micha/Stairs_13DA1DBA.uasset"
+			]
+		}
+	]
+}
