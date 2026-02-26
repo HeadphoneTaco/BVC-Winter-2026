@@ -23,6 +23,14 @@ public class PlayerController : MonoBehaviour
     private CharacterController _characterController;
     private Quaternion _targetRotation;
     private Vector3 _velocity;
+    private bool _isGrounded;
+
+    // Property
+    public bool _IsGrounded
+    {
+        get => _isGrounded;
+        private set { _isGrounded = value; }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +45,15 @@ public class PlayerController : MonoBehaviour
         _characterController.Move(_velocity * Time.deltaTime);
     }
 
+    private void FixedUpdate()
+    {
+        CheckGrounded();
+        if(_isGrounded && _velocity.y < 0)
+        {
+            _velocity.y = -0.2f;
+        }
+    }
+
     public void OnMove(InputValue value)
     {
         _moveInput = value.Get<Vector2>();
@@ -44,11 +61,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump()
     {
-        Debug.Log("JUMP");
-        _velocity.y = jumpVelocity;
-        if(IsGrounded())
+        if(_isGrounded)
         {
-            
+            Debug.Log("JUMP");
+            _velocity.y = jumpVelocity;
         }
     }
 
@@ -72,11 +88,14 @@ public class PlayerController : MonoBehaviour
         //Calculate gravity
         _velocity = Vector3.up * _velocity.y + _moveDirection * moveSpeed;
         _velocity.y += gravity * Time.deltaTime;
+
+        
+        
     }
 
-    private bool IsGrounded()
+    private void CheckGrounded()
     {
-        return Physics.SphereCast(
+        _isGrounded = Physics.SphereCast(
             transform.position + groundCheckOffset,
             groundCheckRadius,
             Vector3.down,
