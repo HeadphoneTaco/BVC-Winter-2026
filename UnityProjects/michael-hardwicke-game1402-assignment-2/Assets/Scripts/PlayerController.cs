@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
+
+    public event Action OnJumpEvent;
     
     private Vector2 _moveInput;
     private Vector3 _camForward;
@@ -25,11 +28,14 @@ public class PlayerController : MonoBehaviour
     private Vector3 _velocity;
     private bool _isGrounded;
 
-    // Property
-    public bool _IsGrounded
+    public bool IsGrounded()
     {
-        get => _isGrounded;
-        private set { _isGrounded = value; }
+        return _isGrounded;
+    }
+
+    public Vector3 GetPlayerVelocity()
+    {
+        return _velocity;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -65,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("JUMP");
             _velocity.y = jumpVelocity;
+            OnJumpEvent?.Invoke();
         }
     }
 
