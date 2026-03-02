@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _velocity;
     private bool _isGrounded;
 
+    // Property
     public bool IsGrounded()
     {
         return _isGrounded;
@@ -95,9 +96,6 @@ public class PlayerController : MonoBehaviour
         //Calculate gravity
         _velocity = Vector3.up * _velocity.y + _moveDirection * moveSpeed;
         _velocity.y += gravity * Time.deltaTime;
-
-        
-        
     }
 
     private void CheckGrounded()
