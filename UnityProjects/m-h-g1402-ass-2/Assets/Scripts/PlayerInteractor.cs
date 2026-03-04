@@ -1,16 +1,41 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteractor : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    
+    //Input
+    [SerializeField] private InputActionReference interactionInput;
+    
+    private IInteractable _interactable;
+    
+
+    private void OnEnable()
     {
-        
+        interactionInput.action.performed += Interact;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        interactionInput.action.performed -= Interact;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        _interactable = other.gameObject.GetComponent<IInteractable>();
+        _interactable?.OnHoverIn();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _interactable?.OnHoverOff();
+        _interactable = null;
+    }
+
+    private void Interact(InputAction.CallbackContext context)
+    {
+      _interactable.OnInteract();  
+    }
+    
 }
