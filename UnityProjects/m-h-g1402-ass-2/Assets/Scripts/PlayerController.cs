@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
     
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.purple;
+        Gizmos.color = Color.magenta;
         Gizmos.DrawSphere(transform.position + groundCheckOffset, groundCheckRadius);
         Gizmos.DrawSphere(transform.position + groundCheckOffset + Vector3.down * groundCheckDistance, groundCheckRadius);
         Gizmos.DrawCube(transform.position + groundCheckOffset + Vector3.down * groundCheckDistance/2, 
