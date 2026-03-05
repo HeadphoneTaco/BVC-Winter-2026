@@ -3002,6 +3002,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708edd0a3765b404099d535e5b42d433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootInput:
+    m_Name: Shoot Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 24f7a350-d632-4637-936d-bf0291b6f110
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9fff25f0-2010-4c43-923c-ddc77c3818b5
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot Input
+      m_Flags: 0
+    m_Flags: 0
+  shootPoint: {fileID: 1252535468}
+  shootObject: {fileID: 5458347707898549213, guid: 04e292a2472e3e9449112e3a5e959cfc, type: 3}
+  shootForce: 500
 --- !u!1001 &2025014207
 PrefabInstance:
   m_ObjectHideFlags: 0
