@@ -1901,13 +1901,14 @@ GameObject:
   - component: {fileID: 1587951026}
   - component: {fileID: 1587951025}
   - component: {fileID: 1587951028}
+  - component: {fileID: 1587951029}
   m_Layer: 0
   m_Name: Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1587951024
 Transform:
   m_ObjectHideFlags: 0
@@ -2009,7 +2010,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b67858ffcc6d049ba7259cec4e9b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionInput: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  interactionInput:
+    m_Name: Interaction Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c24b1588-6f6f-43a4-a2de-eb256024926f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!54 &1587951029
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587951023}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &1619948242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,7 +2531,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b67858ffcc6d049ba7259cec4e9b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionInput: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  interactionInput:
+    m_Name: Interaction Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2af3d353-92ea-4b2a-bb63-3fb1d4038c11
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 51914962-055a-49e0-a153-ff8979cf8931
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interaction Input
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1001 &2025014207
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,24 +5,30 @@ public class PlayerInteractor : MonoBehaviour
 {
     
     //Input
-    [SerializeField] private InputActionReference interactionInput;
+    [SerializeField] private InputAction interactionInput;
     
     private IInteractable _interactable;
     
+    private IInteractable _tempInteractable;
 
     private void OnEnable()
     {
-        interactionInput.action.performed += Interact;
+        interactionInput.Enable();
+        interactionInput.performed += Interact;
     }
 
     private void OnDisable()
     {
-        interactionInput.action.performed -= Interact;
+        interactionInput.performed -= Interact;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        _interactable = other.gameObject.GetComponent<IInteractable>();
+        _tempInteractable = other.GetComponent<IInteractable>();
+        
+        if(_tempInteractable == null) return;
+        
+        _interactable = _tempInteractable;
         _interactable?.OnHoverIn();
     }
 
@@ -37,5 +42,4 @@ public class PlayerInteractor : MonoBehaviour
     {
       _interactable.OnInteract();  
     }
-    
 }
