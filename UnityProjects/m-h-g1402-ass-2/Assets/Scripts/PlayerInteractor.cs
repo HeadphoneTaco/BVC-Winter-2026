@@ -8,7 +8,6 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private InputAction interactionInput;
     
     private IInteractable _interactable;
-    
     private IInteractable _tempInteractable;
 
     private void OnEnable()
@@ -25,11 +24,12 @@ public class PlayerInteractor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _tempInteractable = other.GetComponent<IInteractable>();
-        
-        if(_tempInteractable == null) return;
-        
-        _interactable = _tempInteractable;
-        _interactable?.OnHoverIn();
+
+        if (_tempInteractable != null)
+        {
+            _interactable = _tempInteractable;
+            _interactable?.OnHoverIn();
+        }
     }
 
     private void OnTriggerExit(Collider other)

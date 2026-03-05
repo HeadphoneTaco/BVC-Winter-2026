@@ -11,6 +11,7 @@ public class ChestInteractable : MonoBehaviour, IInteractable
       anim?.SetBool(IsOpen, true);
       
       //TODO - Show UI
+      Toast.Instance.ShowToast("Press \"E\" to Interact");
    }
    
    public void OnHoverOff()
@@ -18,6 +19,7 @@ public class ChestInteractable : MonoBehaviour, IInteractable
       Debug.Log("Interactor Off");
       anim?.SetBool(IsOpen, false);
       //TODO - Hide UI
+      Toast.Instance.HideToast();
    }
    
    public void OnInteract()
