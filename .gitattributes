@@ -6,3 +6,4 @@
 *.zbr filter=lfs diff=lfs merge=lfs -text
 *.zbp filter=lfs diff=lfs merge=lfs -text
 *.zmt filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
