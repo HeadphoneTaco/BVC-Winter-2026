@@ -1,16 +1,35 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Shooter : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private InputAction shootInput;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private GameObject shootObject;
+    
+    [SerializeField] private float shootForce;
+
+    private GameObject _arrow;
+    
+    private void OnEnable()
     {
+        shootInput.Enable();
+        shootInput.performed += Shoot;
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        shootInput.performed -= Shoot;
     }
+
+    private void Shoot(InputAction.CallbackContext context)
+    {
+        //Create a new arrow
+        _arrow = Instantiate(shootObject, shootPoint.position, shootPoint.rotation);
+        
+        //Apply a force
+        _arrow.GetComponent<Rigidbody>().AddForce(shootForce * shootPoint.forward);
+    }
+    
 }
