@@ -6,6 +6,7 @@ public class ChestInteractable : MonoBehaviour, IInteractable
    private static readonly int IsOpen = Animator.StringToHash("IsOpen");
    [SerializeField] private Animator anim;
    private Tween loopTween;
+   //This field 'collectTween' IS being used, Intellisense is being silly
    private Tween collectTween;
 
 
@@ -53,6 +54,6 @@ public class ChestInteractable : MonoBehaviour, IInteractable
 
    void OnDestroy()
    {
-      DOTween.Kill(gameObject);
+      transform.DOKill();
    }
 }

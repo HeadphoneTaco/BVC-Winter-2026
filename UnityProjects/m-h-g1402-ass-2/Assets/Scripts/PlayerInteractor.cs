@@ -40,6 +40,6 @@ public class PlayerInteractor : MonoBehaviour
 
     private void Interact(InputAction.CallbackContext context)
     {
-      _interactable.OnInteract();  
+      _interactable?.OnInteract();  
     }
 }

@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000023841858
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -181,15 +181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8186505739950836079, guid: f06bcb5a99bfd79418caf18dc910b5ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -668,7 +668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302836342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1175003, y: 0.0013572634, z: -0.00016059147, w: 0.9930719}
+  m_LocalRotation: {x: 0.11750023, y: 0.0016776425, z: -0.00019849869, w: 0.99307144}
   m_LocalPosition: {x: 0, y: 4.1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1747,7 +1747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048887643}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1175003, y: 0.0013572634, z: -0.00016059146, w: 0.9930719}
+  m_LocalRotation: {x: 0.117500216, y: 0.0016776425, z: -0.00019849866, w: 0.9930715}
   m_LocalPosition: {x: 0, y: 4.1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3152,7 +3152,7 @@ SceneRoots:
   - {fileID: 1920375956}
   - {fileID: 1048887647}
   - {fileID: 5190301243461877731}
-  - {fileID: 1793190194}
   - {fileID: 135555039}
+  - {fileID: 1793190194}
   - {fileID: 1641153018}
   - {fileID: 1825781944}
