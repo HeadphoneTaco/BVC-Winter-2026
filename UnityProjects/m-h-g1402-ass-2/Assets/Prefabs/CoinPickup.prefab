@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8447920052154852172}
   - component: {fileID: 3923683638399189916}
   - component: {fileID: 1747282926435009624}
+  - component: {fileID: 7231185362690613014}
   m_Layer: 0
   m_Name: CoinPickup
   m_TagString: Untagged
@@ -110,3 +111,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &7231185362690613014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216505750409047570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cb07a336eb5a94c8a00a3c8ce7be40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
