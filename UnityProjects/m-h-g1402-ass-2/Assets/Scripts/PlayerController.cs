@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+namespace YeetThePlayer
+{
+    
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float moveSpeed = 2;
     [SerializeField] private float rotationSpeed = 10;
-    [SerializeField] private float gravity = -9.8f;
+    [SerializeField] public float gravity = -9.8f;
     [SerializeField] private float jumpVelocity = 10f;
 
     [Space(10)]
@@ -76,6 +79,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void ReverseGravity()
+    {
+        gravity = 9.8f;
+    }
+
     private void CalculateMovement()
     {
         _camForward = playerCamera.transform.forward;
@@ -118,4 +126,5 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawCube(transform.position + groundCheckOffset + Vector3.down * groundCheckDistance/2, 
                     new Vector3(1.5f* groundCheckRadius, groundCheckDistance , 1.5f * groundCheckRadius) );
     }
+}
 }
