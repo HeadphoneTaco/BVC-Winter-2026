@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Interfaces;
 using UnityEngine;
 
 public class ChestInteractable : MonoBehaviour, IInteractable
