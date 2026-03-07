@@ -15,7 +15,6 @@ public class Shooter : MonoBehaviour
     {
         shootInput.Enable();
         shootInput.performed += Shoot;
-        
     }
 
     private void OnDisable()
@@ -31,5 +30,4 @@ public class Shooter : MonoBehaviour
         //Apply a force
         _arrow.GetComponent<Rigidbody>().AddForce(shootForce * shootPoint.forward);
     }
-    
 }
