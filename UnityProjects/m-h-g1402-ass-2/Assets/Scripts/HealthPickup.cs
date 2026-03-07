@@ -4,9 +4,9 @@ public class HealthPickup : MonoBehaviour, ICollectable
 {
     [SerializeField] private int healAmount = 1;
 
-    public void OnCollect(GameObject collector)
+    public void OnCollect(GameObject healthpack)
     {
-        Health health = collector.GetComponent<Health>();
+        var health = healthpack.GetComponent<Health>();
 
         if (health != null)
         {
